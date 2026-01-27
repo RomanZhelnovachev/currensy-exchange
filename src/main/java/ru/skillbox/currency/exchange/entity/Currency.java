@@ -31,4 +31,7 @@ public class Currency {
     @Column(name = "iso_num_code")
     private Long isoNumCode;
 
+    @Column(name = "iso_alpha_code")
+    private String isoAlphaCode;
+
 }
