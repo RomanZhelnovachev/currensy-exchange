@@ -5,18 +5,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class CurrencyDto {
-    private Long id;
+public record  CurrencyDto (Long id, String name, Long nominal, Double value, Long isoNumCode, String isoAlphaCode) {
 
-    private String name;
-
-    private Long nominal;
-
-    private Double value;
-
-    private Long isoNumCode;
 }
